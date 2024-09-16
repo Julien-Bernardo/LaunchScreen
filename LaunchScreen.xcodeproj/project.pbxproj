@@ -11,6 +11,10 @@
 		8D0E5E0A2C984D9800B5DBE9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E5E092C984D9800B5DBE9 /* ContentView.swift */; };
 		8D0E5E0C2C984D9900B5DBE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0E5E0B2C984D9900B5DBE9 /* Assets.xcassets */; };
 		8D0E5E0F2C984D9900B5DBE9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0E5E0E2C984D9900B5DBE9 /* Preview Assets.xcassets */; };
+		8D0E5E162C984F4100B5DBE9 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E5E152C984F4100B5DBE9 /* SplashScreenView.swift */; };
+		8D0E5E182C984F6500B5DBE9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E5E172C984F6500B5DBE9 /* Constants.swift */; };
+		8D0E5E1C2C984FAE00B5DBE9 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E5E1B2C984FAE00B5DBE9 /* WelcomeView.swift */; };
+		8D0E5E1E2C984FC300B5DBE9 /* PlayfairDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D0E5E1D2C984FC300B5DBE9 /* PlayfairDisplay-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		8D0E5E092C984D9800B5DBE9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8D0E5E0B2C984D9900B5DBE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D0E5E0E2C984D9900B5DBE9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8D0E5E152C984F4100B5DBE9 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		8D0E5E172C984F6500B5DBE9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8D0E5E1B2C984FAE00B5DBE9 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		8D0E5E1D2C984FC300B5DBE9 /* PlayfairDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlayfairDisplay-Regular.ttf"; sourceTree = "<group>"; };
+		8D0E5E1F2C984FE000B5DBE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +60,13 @@
 		8D0E5E062C984D9800B5DBE9 /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
+				8D0E5E1F2C984FE000B5DBE9 /* Info.plist */,
+				8D0E5E1A2C984F8200B5DBE9 /* View */,
+				8D0E5E192C984F7A00B5DBE9 /* Fonts */,
 				8D0E5E072C984D9800B5DBE9 /* LaunchScreenApp.swift */,
-				8D0E5E092C984D9800B5DBE9 /* ContentView.swift */,
 				8D0E5E0B2C984D9900B5DBE9 /* Assets.xcassets */,
 				8D0E5E0D2C984D9900B5DBE9 /* Preview Content */,
+				8D0E5E172C984F6500B5DBE9 /* Constants.swift */,
 			);
 			path = LaunchScreen;
 			sourceTree = "<group>";
@@ -65,6 +77,24 @@
 				8D0E5E0E2C984D9900B5DBE9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8D0E5E192C984F7A00B5DBE9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8D0E5E1D2C984FC300B5DBE9 /* PlayfairDisplay-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8D0E5E1A2C984F8200B5DBE9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D0E5E092C984D9800B5DBE9 /* ContentView.swift */,
+				8D0E5E152C984F4100B5DBE9 /* SplashScreenView.swift */,
+				8D0E5E1B2C984FAE00B5DBE9 /* WelcomeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +157,7 @@
 			files = (
 				8D0E5E0F2C984D9900B5DBE9 /* Preview Assets.xcassets in Resources */,
 				8D0E5E0C2C984D9900B5DBE9 /* Assets.xcassets in Resources */,
+				8D0E5E1E2C984FC300B5DBE9 /* PlayfairDisplay-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D0E5E1C2C984FAE00B5DBE9 /* WelcomeView.swift in Sources */,
 				8D0E5E0A2C984D9800B5DBE9 /* ContentView.swift in Sources */,
 				8D0E5E082C984D9800B5DBE9 /* LaunchScreenApp.swift in Sources */,
+				8D0E5E162C984F4100B5DBE9 /* SplashScreenView.swift in Sources */,
+				8D0E5E182C984F6500B5DBE9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +309,7 @@
 				DEVELOPMENT_TEAM = 49TSHQNY88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LaunchScreen/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +339,7 @@
 				DEVELOPMENT_TEAM = 49TSHQNY88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LaunchScreen/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

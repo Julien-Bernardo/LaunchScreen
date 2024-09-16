@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct WelcomeView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+	@State var show = false
 
-#Preview {
-    WelcomeView()
+    var body: some View {
+		ZStack {
+			if show {
+				Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+			}
+		}
+		.frame(width: SCREEN_WIDTH, height: SCREEN_HEIGHT)
+		.ignoresSafeArea()
+		.onAppear{
+			DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(4700)) {
+				self.show = true
+			}
+		}
+    }
 }
